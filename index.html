@@ -1,275 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css' />
-    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cmplayer.github.io by bomi-player</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>bomi Project Page</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>bomi</h1>
-        <h2>Powerful and Easy-to-use Multimedia Player</h2>
-        <a href="https://github.com/xylosper/bomi" class="button"><small>View on</small> GitHub</a>
-      </div>
-    </header>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/bomi-player">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+    <div class="wrapper">
 
-<p>
-	한국분은 부담없이 한국어로 문의해주세요.<br>
-	日本語でのお問い合わせもお受けしています。
-</p>
-<h3>News</h3>
+      <section>
+        <div id="title">
+          <h1>Cmplayer.github.io</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/bomi-player">bomi-player</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-<p>
-        <a id="news_2015_01_11_06_59" class="news_date">2015/01/11</a><br>
-        
-        CMPlayer 0.8.17 is released. This release provides lots of improvements and bug fixes.
-        It is highly recommended to update. For details, see the <a href="https://github.com/xylosper/bomi/releases/tag/v0.8.17">release notes</a>.
-        All official packages have been updated.<br>
-        <b>CAUTION</b>: There's a plan to break backward compatibility in next version. Every user who wants to keep his or her settings must update to this version first before try next version.
-        
-</p>
+        <p>CMPlayer 개발자는 한국인입니다. 외국 유저를 위해서 영어위주로 설명이 되어있으니, 영어울렁증이 있으신분은 부담없이 한국어로 문의해주세요.</p>
 
-<!-- for what?? <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a> -->
-<h3>Introduction</h3>
+<p>=CMPlayer 0.7.3 is released!=</p>
 
-<p>
-	bomi is a multimedia player.
-	It is aimed for easy usage but also provides various powerful features and convenience functions.
-	Just install and enjoy it! There will be already what you expect.
-	If you don't like, you can configure almost everything.
-</p>
-
-<h3>Requirements</h3>
+<p>Changes</p>
 
 <ul>
-	<li>Linux / OS X (for OS X, you need 10.7 or later)</li>
-	<li>OpenGL 2.1 or later</li>
-	<li>Qt5 5.2 or later</li>
+<li>Fix: 'Open from file manager' and 'Open by drag-and-drop' options weren't saved</li>
+<li>Fix: Sometimes auto-pause and replay on hiding and showing fails</li>
+<li>Fix: Wrong behavior on opening media when minimized</li>
+<li>Fix: Wrong window title when the location is invalid</li>
+<li>Fix: Wrong format comparision which causes video torn</li>
+<li>Fix: Keep the volume when media changed</li>
+<li>Fix: No audio when audio track changed</li>
+<li>Fix: Show application icon when the window reopen</li>
+<li>New: Audio track circulation</li>
+<li>New: Keyboard shortcut preset and Movist preset</li>
+<li>New: Playlist menu</li>
+<li>New: Adjust audio sync delay</li>
+<li>New: Lion-style fullscreen can be disabled</li>
 </ul>
-<p>
-	For more details, see <a href="#dependencies">Dependencies</a>.
-</p>
 
-<h3>Key Features</h3>
-<dl>
-	<dt>Enhanced Subtitle Handling</dt>
-	<dd>
-		bomi can display multiple subtitle files at once.
-		Also, bomi handles .smi subtitle properly, e.g., multi-language, tag-based format.
-	</dd>
-	
-	<dt>Stays on Top</dt>
-	<dd>
-		You can choice a stays-on-top mode: always, playing, or never.
-		For instance, with playing mode, bomi stays on top only for while playing a media.
-	</dd>
-	
-	<dt>A-B Repeat</dt>
-	<dd>
-		bomi supports A-B repeat.
-		A and B points are selected easily with shortcut.
-		It is also possible to specify repetition interval by subtitle.
-	</dd>
+<p>Arch Linux AUR: <a href="https://aur.archlinux.org/packages/cmplayer">https://aur.archlinux.org/packages/cmplayer</a></p>
 
-	<dt>Customizable Shortcut</dt>
-	<dd>
-		bomi provides handy default shortcuts.
-		Pushed wrong shortcut accidentally? Don't worry. You can undo and redo it!
-		Do you think they are not handy? Just change them to what you want.
-	</dd>
-</dl>
-<p>
-	bomi also has so many features which are not addressed here.
-	For more details, see <a href="#feature-list">Feature List</a>.
-</p>
+<p>Ubuntu PPA: <a href="https://launchpad.net/%7Edarklin20/+archive/cmplayer-ppa">https://launchpad.net/~darklin20/+archive/cmplayer-ppa</a></p>
 
-<h3>Contacts</h3>
-<dl>
-	<dt><a href="https://github.com/xylosper/bomi/issues">Issue Tracker</a></dt>
-	<dd>
-		If you have problems or want some features, please report them.
-	</dd>
-	
-	<dt><a href="http://xylosper.net">Blog</a></dt>
-	<dd>
-		It is author's personal blog.
-		You are free to leave any comment about bomi.<br />
-		Although it's Korean page, I can understand English and Japanese as well.
-	</dd>
-	<dt><a href="mailto:darklin20@gmail.com">E-mail</a></dt>
-	<dd>
-		If you want to contact me privately, please send me an e-mail.
-	</dd>
-</dl>
+<p>=Introduction=</p>
 
-<h3>License</h3>
-<p>bomi is distributed under GPLv2.</p>
+<p>CMPlayer is a multimedia player which (ultimately) does not requre any complex configure or something for Linux and Mac OS X.</p>
 
-<p>Copyright (C) 2013 xylosper</p>
+<p>Just download it and play what you want to play.</p>
 
-<p>This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.</p>
-
-<p>This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.</p>
-
-<p>You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</p>
-
-<h3 id="feature-list">Feature List</h3>
+<p>Features</p>
 
 <ul>
-	<li>
-		Playback
-		<ul>
-			<li>Various media files and DVD</li>
-			<li>Multi-chapter files(mkv)</li>
-			<li>Playback speed</li>
-			<li>A-B repeat specified by time</li>
-			<li>A-B repeat specified by subtitle</li>
-			<li>Playback history</li>
-			<li>Playlist support</li>
-			<li>Resume playback</li>
-			<li>Hardware-accelerated decoding(turned off by default)</li>
-			<li>Accurate seeking</li>
-			<li>Tri-level steps for seeking</li>
-			<li>Seeking by subtitle</li>
-			<li>Image slide show</li>
-		</ul>
-	</li>
-	<li>
-		Video
-		<ul>
-			<li>Snapshot</li>
-			<li>Various aspect ratio and crop modes</li>
-			<li>Adjust screen poistion and alignment</li>
-			<li>Interpolators(bilinear/Catmull-Rom/Mitchell-Netravali/B-Spline/Lanczos)</li>
-			<li>Deinterlacer(Bob/linear Bob/cubic Bob/Yadif/...)
-			<li>Filters(flipping/blur/sharpen/...)</li>
-			<li>Color Equalizer(brightness/saturation/contrast/hue)</li>
-		</ul>
-	</li>
-	<li>
-		Audio
-		<ul>
-			<li>Multi-track files</li>
-			<li>Adjust volume/mute</li>
-			<li>Adjust amplification</li>
-			<li>Adjust audio-video synchronization</li>
-			<li>Volume normalization</li>
-			<li>Tempo scaler(auto-adjust pitch)</li>
-			<li>Various output driver</li>
-			<li>Soft-clipping</li>
-		</ul>
-	</li>
-	<li>
-		Subtitle
-		<ul>
-			<li>Various subtitle formats (Sami(smi)/SubRip(srt)/MicroDVD/TMPlayer/ASS)</li>
-			<li>Multi-language .smi support</li>
-			<li>Formatted text including &lt;ruby&gt; support(.smi/.srt/.ass)</li>
-			<li>Display multiple subtitles</li>
-			<li>Auto-dection of subtitle encoding</li>
-			<li>Subtitle viewer</li>
-			<li>Display in letterbox or video</li>
-			<li>Adjust top/bottom alignment and position</li>
-			<li>Adjust subtitle sychronization</li>
-		</ul>
-	</li>
-	<li>
-		Other Good things
-		<ul>
-			<li>Auto-exit on playlist finished</li>
-			<li>Auto-shutdown on playlist finished</li>
-			<li>Display playback informations</li>
-			<li>Stay on top always/playing/never</li>
-			<li>System tray icon support (Linux only)</li>
-			<li>Single application support</li>
-			<li>Generate playlist</li>
-			<li>Auto-pausing on hidden</li>
-			<li>Auto-hidiing mouse cursor</li>
-			<li>OSD notification</li>
-			<li>Various skins</li>
-			<li>Configurable auto-loading and auto-selection of subtitles</li>
-			<li>Customizable subtitle appearance and line spacing</li>
-			<li>Disable screensaver while playing</li>
-			<li>Customizable mouse actions</li>
-			<li>Customizable keyboard shortcuts</li>
-			<li>Customizable control steps</li> 
-		</ul>
-	</li>
-</ul>
+<li>
+<p>Playback</p>
 
-<h3 id="dependencies">Dependencies</h3>
-<p>bomi depends on next libraries:
 <ul>
-	<li>OpenGL 2.1 or later for video rendering</li>
-	<li>Qt 5.2 or later for GUI</li>
-	<li><a href="http://mpv.io/">mpv</a> for playback backend</li>
-	<li><a href="http://www.ffmpeg.org/">ffmpeg</a> for decoding</li>
-	<li><a href="http://code.google.com/p/libass">libass</a> for .ass subtitle support</li>
-	<li><a href="http://dvdnav.mplayerhq.hu">libdvdread/libdvdnav</a> for DVD support</li>
-	<li><a href="http://www.gnu.org/software/libcdio">libcdio</a> for audio CD support</li>
-	<li><a href="http://quvi.sourceforge.net">libquvi</a> for playback of web-address</li>
-	<li><a href="http://www.freedesktop.org/wiki/Software/vaapi">libva</a> for hardware decoding by VA-API(Linux-only)</li>
+<li>can play files and DVD</li>
+<li>generates playlist automatically</li>
+<li>can change playback speed</li>
+<li>supports A-B repeat</li>
+<li>remembers play history</li>
+<li>can replay from stopped point</li>
+<li>supports hardware-accelerated decoding</li>
 </ul>
-</p>
-</section>
+</li>
+<li>
+<p>Video</p>
 
-<aside id="sidebar">
-<p class="repo-owner"><a href="https://github.com/xylosper/cmplayer"></a>Maintained by <a href="http://xylosper.net">xylosper</a></p>
-
-<a class="button" href="https://github.com/xylosper/cmplayer/releases/download/v0.8.17/cmplayer-0.8.17-source.tar.gz"><small>0.8.17 sources</small>.tar.gz file</a>
-<a class="button" href="https://github.com/xylosper/homebrew-cmplayer"><small>OS X Homebrew</small>Go to Tap</a>
-<a class="button" href="https://aur.archlinux.org/packages/cmplayer"><small>Arch Linux Package</small>Go to AUR</a>
-<a class="button" href="https://launchpad.net/~darklin20/+archive/cmplayer-ppa"><small>Ubuntu Package</small>Go to PPA</a>
-<a class="button" href="https://www.breed808.com/cmplayer" style="padding-top: 7px; height: 73px"><small>fedora/openSUSE</small>breed808's<br>RPM Repo</a>
-
-<h3>Related Project</h3>
 <ul>
-	<li><a href="http://mpv.io">mpv</a></li>
+<li>can take snapshots</li>
+<li>can adjust aspect ratio</li>
+<li>can crop video</li>
+<li>can align and move the screen</li>
+<li>can adjust color properties(brightness/saturation/contrast/hue)</li>
+<li>supports various video filters (flipping/blur/sharpen/...)</li>
 </ul>
+</li>
+<li>
+<p>Audio</p>
 
-
-<h3>Links</h3>
 <ul>
-	<li><a href="https://github.com/xylosper/cmplayer/issues">Issue Tracker</a></li>
-	<li><a href="https://github.com/xylosper/cmplayer/releases">Release List</a></li>
-	<li><a href="http://xylosper.net">Author's Blog</a></li>
+<li>supports multi-track files</li>
+<li>supports volume normalization</li>
+<li>adjusts pitch automatically when playback speed is changed</li>
+</ul>
+</li>
+<li>
+<p>Subtitle</p>
+
+<ul>
+<li>supports various subtitle formats (Sami(smi)/SubRip(srt)/MicroDVD/TMPlayer)</li>
+<li>supprots unified subititles of Sami format</li>
+<li>supports colored subtitles of Sami format</li>
+<li>can adjust line spacing in subtitle</li>
+<li>can display several subtitles at the same time</li>
+<li>detects the encoding of subtitle files</li>
+<li>has subtitle viewer</li>
+<li>can seek playback with subtitle time</li>
+<li>can display DVD with subtitle files</li>
+</ul>
+</li>
+<li>
+<p>etc.</p>
+
+<ul>
+<li>supports auto-exit which makes itself closed when the playlist has finished</li>
+<li>supports auto-shutdown which makes the system shutdown when the playlist has finished</li>
+<li>supports single application</li>
+<li>supprots the system tray icon on Linux</li>
+<li>pause when minimized and auto-start when recovered</li>
+<li>supports 'stays on top'</li>
+<li>can disable the screensaver while playing</li>
+<li>can customize the shortcut of every menu</li>
+<li>can customize mouse action</li>
+<li>can customize control steps (volume, seeking, and so on)</li>
+</ul>
+</li>
 </ul>
 
+<p>CMPlayer also has so many features which are not addressed here.
+Welcome any suggest and bug report.</p>
 
+<p>CMPlayer is distributed under GNU public license (GPL).</p>
 
-       
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p style="font-size:11px;">Hosted by <a href="pages.github.com">GitHub Pages</a>.<br>
-Base design by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-</aside>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-</div></div>
-            <script type="text/javascript">
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
