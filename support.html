@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>bomi project page</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+<div id="header">
+    <nav><ul>
+        <li class="fork"><a href="index.html">Home</a></li>
+        <li class="fork"><a href="downloads.html">Downloads</a></li>
+        <li class="fork"><a href="support.html">Support</a></li>
+        <li class="fork" style="float: right; margin: 0px"><a href="https://github.com/xylosper/bomi">GitHub</a></li>
+        <li class="fork" style="float: right;"><a href="https://twitter.com/bomi_player">News</a></li>
+    </ul></nav>
+</div><!-- end header -->
+
+<div class="wrapper">
+<section>
+
+<div id="title">
+    <h1><span  style="background: url(./logo.png) no-repeat left center; background-size: 48px; padding-left: 55px">Support</span></h1>
+    <p>ask anything about bomi</p>
+    <hr>
+    <span class="credits left">Project maintained by <a href="https://github.com/xylosper">xylosper</a></span>
+    <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+</div>
+
+<h2><a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issue tracker</h2>
+
+<p><a href="https://github.com/xylosper/bomi/issues">https://github.com/xylosper/bomi/issues</a></p>
+
+<p>
+    You can ask aynthing related with bomi at issue tracker even if it's not an issue, e.g.,
+    you may ask a usage for some functionality of bomi.
+    However, there are some rules you'd better pay attention before posting a new issue.
+</p>
+
+<p>You are allowed to post issue in Korean, English, and Japanese.</p>
+
+<h2><a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug reports</h2>
+
+<p>
+    Did you find a bug? Or, at least doubtful behavior?
+    Before you open a new issue, I recommend trying latest git source because what you thought a bug might be an already fixed problem.
+</p>
+
+<p>If it still exists in latest source, or you cannot test it, please report it with next informations:</p>
+<ul>
+    <li>What version do you use?</li>
+    <li>Is it reproducible?</lI>
+    <li>Does the problem occur with specific file or specific format only?</li>
+    <li>Can you <a href="#provide-sample-file">provide a sample file</a> which you tested?</li>
+</ul>
+
+<p>
+    Sometimes, it may be helpful to provide the full console log with <code>--debug</code> option.
+    If the log is too long to copy from terminal window, run bomi with next command:
+</p>
+
+<pre><code>$ bomi --debug > ~/bomi.log</code></pre>
+
+
+<p>
+    This will create and record all logs into bomi.log which you can find in your home directory.
+    Please post the contents of log file with your issue.
+    You may remove the log file after copyed the contents.
+</p>
+
+<h2><a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature requests</h2>
+
+<p>
+    Do you have any good idea for bomi? Are you missing a feature of other player? Please make a feature request.
+    Ican try to implemet it unless it's against my policy. However, I still need your help to understand your request better.
+</p>
+
+<ul>
+    <li>Can you give me a practical example which describes what you expect?</li>
+    <li>Can you <a href="#provide-sample-file">provde a sample file</a> if you want a new support?</li>
+    <li>Does similar feature exist in other player?</li>
+</ul>
+
+<p>It is up to you how well make me understand your request. The better you describe what you think, the easier I understand it.</p>
+
+<h2><a id="provide-sample-file" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Provide sample file</h2>
+
+<p>
+    When you open a new issue it's always better to provide a sample file or sample URL than not to do.
+    The problem is that the issue tracker of GitHub does not allow to attach any file except images.
+    If you don't know how to provide a sample file, you have some options.
+</p>
+
+<h3>Cut down file size</h3>
+<p>
+    Before you post/send the sample file, you may want to cut it down to reduce file size.
+    I recommend cutting down the size of sample file if cut file still reproduces same problem,
+    because it will save lots of resources to upload/download the file.
+</p>
+
+<p>To cut down a file, open the terminal and run next command:</p>
+<pre></code>$ dd if=path/to/original/file of=path/to/result/file bs=1024 count=10000</code></pre>
+<p>
+    This command will produce about 10MB file which is cut from front part of the original file.
+    The size of result file is determined as <code>bs*count</code> bytes.
+    If you don't think the file size is too small, you can increase the size by adjusting these parameter.
+</p>
+
+<h3>Send me the file with E-mail</h3>
+
+<p>
+    This is quite limited method because the file size to attach is restricted to several megabytes usually.
+    If the file size is so small that you can attach and send it through E-mail, then use the E-mail.
+</p>
+
+<h3>Use sharable web storage/cloud service</h3>
+
+<p>
+    If the file size is too large to send by E-mail, you can use web storage/cloud service.
+    Some cloud services like DropBox and Google Drive allow to share file through web.
+    If you think the file is inappropriate to put in public site, you can send me the link URL
+    to shared file through E-mail.
+</p>
+
+</section>
+</div>
+
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-19349741-4");
+        pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+
+</body>
+
+</html>
