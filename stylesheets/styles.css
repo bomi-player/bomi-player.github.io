@@ -619,6 +619,15 @@ section img {
   max-width: 100%;
 }
 
+.gallery {
+    display: block;
+    margin: 0 auto;
+}
+
+h3 .credits {
+    font-size: 80%;
+}
+
 blockquote {
   border-left: 3px solid #ffcc00;
   margin: 0;
